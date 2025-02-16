@@ -1,0 +1,36 @@
+[project]
+name = "thesis"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Victor Zenin",email = "super.cat3124@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+
+[virtualenvs]
+create = true
+in-project = true
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pytorch-stable-rocm6.2.4"
+url = "https://download.pytorch.org/whl/rocm6.2.4"
+priority = "supplemental"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[tool.poetry.group.dev.dependencies]
+mypy = {}
+ruff = {}
+black = {}
+
+[tool.poetry.group.torch.dependencies]
+torch = {version = ">=2.6.0, <3.0.0", source = "pytorch-stable-rocm6.2.4"} 
+torchaudio = {version = ">=2.6.0, <3.0.0", source = "pytorch-stable-rocm6.2.4"}
+torchvision = {version = ">=0.21.0, <0.22.0", source = "pytorch-stable-rocm6.2.4"}
