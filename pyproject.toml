@@ -30,7 +30,18 @@ mypy = {}
 ruff = {}
 black = {}
 
+[tool.poetry.group.ml.dependencies]
+matplotlib = {version = ">=3.10.0, <3.11.0"}
+
 [tool.poetry.group.torch.dependencies]
 torch = {version = ">=2.6.0, <3.0.0", source = "pytorch-stable-rocm6.2.4"} 
 torchaudio = {version = ">=2.6.0, <3.0.0", source = "pytorch-stable-rocm6.2.4"}
 torchvision = {version = ">=0.21.0, <0.22.0", source = "pytorch-stable-rocm6.2.4"}
+
+[tool.poetry.group.graph.dependencies]
+torch_geometric = {file = ".local/torch_geometric-2.6.1-py3-none-any.whl"}
+torch_scatter = {file = ".local/torch_scatter-2.1.2-cp312-cp312-linux_x86_64.whl"}
+torch_sparse = {file = ".local/torch_sparse-0.6.18-cp312-cp312-linux_x86_64.whl"}
+torch_cluster = {file = ".local/torch_cluster-1.6.3-cp312-cp312-linux_x86_64.whl"}
+torch_spline_conv = {file = ".local/torch_spline_conv-1.2.2-cp312-cp312-linux_x86_64.whl"}
+pyg_lib = {file = ".local/pyg_lib-0.4.0-cp312-cp312-linux_x86_64.whl"}
