@@ -30,6 +30,9 @@ mypy = {}
 ruff = {}
 black = {}
 
+[tool.poetry.group.test.dependencies]
+pytest = {version = ">=8.3.4, < 9.0.0"}
+
 [tool.poetry.group.ml.dependencies]
 matplotlib = {version = ">=3.10.0, <3.11.0"}
 
