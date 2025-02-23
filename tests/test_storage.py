@@ -27,7 +27,9 @@ def test_queries_graph():
         clicked_documents=[d_2, d_1],
     )
 
-    storage = Storage([s_1, s_2, s_3])
+    # В s_3 кликали по q_3 в d_1, как и в q_2.
+    # Но поскольку у нас 2 s_3, то по q_3 кликали дважды
+    storage = Storage([s_1, s_2, s_3, s_3])
 
     adjacency_list = storage.get_queries_graph_as_adjacency_list()
 
@@ -39,3 +41,6 @@ def test_queries_graph():
     assert q_1 in adjacency_list[q_3]
 
     assert q_1 not in adjacency_list[q_1], "self loop exists"
+
+    assert adjacency_list[q_1][q_3] == 2
+    assert adjacency_list[q_3][q_1] == 1
