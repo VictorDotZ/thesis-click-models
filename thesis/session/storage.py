@@ -1,7 +1,9 @@
-from typing import Set, Dict
 from collections import defaultdict
+from typing import Dict, Set
+
 from torch_geometric.data import Data
-from .session import Query, Document, Session
+
+from thesis.session.session import Document, Query, Session
 
 
 class Storage:
