@@ -1,16 +1,16 @@
+from thesis.session.session import Document, Query, Session
 from thesis.session.storage import Storage
-from thesis.session.session import Query, Document, Session
 
 
 def test_queries_graph():
-    d_1 = Document(url="url1", doc_id=1)
-    d_2 = Document(url="url2", doc_id=2)
-    d_3 = Document(url="url3", doc_id=3)
-    d_4 = Document(url="url4", doc_id=4)
+    d_1 = Document(url="url1", doc_id=0)
+    d_2 = Document(url="url2", doc_id=1)
+    d_3 = Document(url="url3", doc_id=2)
+    d_4 = Document(url="url4", doc_id=3)
 
-    q_1 = Query(text="q1", q_id=1)
-    q_2 = Query(text="q2", q_id=2)
-    q_3 = Query(text="q3", q_id=3)
+    q_1 = Query(text="q1", q_id=0)
+    q_2 = Query(text="q2", q_id=1)
+    q_3 = Query(text="q3", q_id=2)
 
     s_1 = Session(
         session_id=1,
@@ -44,3 +44,5 @@ def test_queries_graph():
 
     assert adjacency_list[q_1][q_3] == 2
     assert adjacency_list[q_3][q_1] == 1
+
+    # TODO: надо как-то протестировать, что граф получается норм

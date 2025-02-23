@@ -1,14 +1,58 @@
 from collections import defaultdict
-from typing import Dict, Set
+from typing import Dict, List, Set, Tuple
 
+from pathlib import Path
+import matplotlib.pyplot as plt
+import networkx as nx
+import torch
 from torch_geometric.data import Data
+from torch_geometric.utils import to_networkx
 
 from thesis.session.session import Document, Query, Session
 
 
 class Storage:
     def __init__(self, sessions: Set[Session]):
+        if not self.__is_valid_sessions(sessions):
+            raise ValueError(
+                "Query and Document indices must be form a finite, "
+                "contiguous sequence of non-negative integers "
+                "starting at 0 (e.g., {0, 1, 2, ..., n})."
+            )
+
         self._sessions = sessions
+
+    def __is_valid_sessions(self, sessions: Set[Session]) -> bool:
+        """
+        Для того чтобы графы на тензорах нормально строились,
+        индексы запросов и документов должны валидными
+        """
+
+        query_indices: Set[int] = set([session.query.q_id for session in sessions])
+
+        document_indices: Set[int] = set(
+            [document.doc_id for session in sessions for document in session.serp]
+        )
+
+        return self.__is_valid_indices(query_indices) and self.__is_valid_indices(
+            document_indices
+        )
+
+    def __is_valid_indices(self, indices: Set[int]) -> bool:
+        """
+        Множество индексов валидно если:
+            1. Существует минимальный элемент равный 0.
+            2. Максимальный элемент + 1 равен количеству
+                (<=> индексы линейно упорядоченны и между двумя соседними разность == 1)
+        """
+
+        if min(indices) != 0:
+            return False
+
+        if len(indices) != max(indices) + 1:
+            return False
+
+        return True
 
     @property
     def sessions(self) -> Set[Session]:
@@ -104,10 +148,83 @@ class Storage:
 
         return adjacency_list
 
-    @staticmethod
-    def to_graph(storage: "Storage") -> Data:
+    def get_train_validation_test_split(
+        self, proportion: Tuple[float, float, float]
+    ) -> Tuple["Storage", "Storage", "Storage"]:
         """
-        Возвращает граф в формате torch_geometric
+        Делит текущее хранилище на Train, Validation и Test так, что:
+            1. Количество сессий в каждом сплите пропорционально переданным параметрам
+            2. Запросы также разделены пропорционально, если это возможно.
+                Если сессия по запросу одна (или 2, т.е. недостаточно чтобы быть в каждом сплите),
+                то такие сессии находятся преимущественно в Test и Validation (Test в приоритете)
+        """
+        raise NotImplementedError()
+
+    @staticmethod
+    def to_Q_Q_graph(storage: "Storage") -> Data:
+        """
+        Возвращает граф запросов (Query-Query) в формате torch_geometric
         """
 
-        return Data()
+        queries_graph_as_adjacency_list = storage.get_queries_graph_as_adjacency_list()
+
+        edges: List[List[Query]] = [
+            [source_query, destination_query]
+            for source_query in queries_graph_as_adjacency_list
+            for destination_query in queries_graph_as_adjacency_list[source_query]
+        ]
+
+        nodes: List[List[Query]] = [
+            [source_query] for source_query in queries_graph_as_adjacency_list
+        ]
+
+        edges_indices: List[List[int]] = [
+            [source_query.q_id, target_query.q_id]
+            for [source_query, target_query] in edges
+        ]
+
+        nodes_indices: List[List[int]] = [[source_node.q_id] for [source_node] in nodes]
+
+        edge_weigts: List[int] = [
+            queries_graph_as_adjacency_list[source_query][target_query]
+            for [source_query, target_query] in edges
+        ]
+
+        data = Data(
+            x=torch.tensor(nodes_indices, dtype=torch.long),
+            edge_index=torch.tensor(edges_indices, dtype=torch.float).t().contiguous(),
+        )
+
+        data["weight"] = torch.tensor(edge_weigts, dtype=torch.float)
+
+        return data
+
+    @staticmethod
+    def save_Q_Q_graph(data: Data, save_path: Path) -> None:
+        torch.save(data, save_path)
+
+    @staticmethod
+    def load_Q_Q_graph(load_path: Path) -> Data:
+        return torch.load(load_path)
+
+    @staticmethod
+    def plot_graph(data: Data, save_path: Path) -> None:
+        """
+        Вспомагательный метод, позволяющий нарисовать граф.
+        """
+        # TODO: должен быть не в Storage классе
+        G = to_networkx(data, to_undirected=False, edge_attrs=["weight"])
+        pos = nx.spring_layout(G, seed=7)
+        nx.draw_networkx_nodes(G, pos, node_size=400)
+        nx.draw_networkx_edges(
+            G,
+            pos,
+            edgelist=[(u, v) for (u, v, d) in G.edges.data("weight")],
+            width=2,
+            connectionstyle="arc3, rad=-0.5",
+        )
+        edge_labels = nx.get_edge_attributes(G, "weight")
+        nx.draw_networkx_edge_labels(
+            G, pos, edge_labels=edge_labels, connectionstyle="arc3, rad=-0.5"
+        )
+        plt.savefig(save_path)
