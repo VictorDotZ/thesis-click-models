@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="171.97917mm"
+   height="105.83335mm"
+   viewBox="0 0 171.97917 105.83335"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="weighted_vs_non.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-11.124856,-26.917669)">
+    <rect
+       fill="#ffffff"
+       x="11.124856"
+       y="26.917667"
+       width="171.97917"
+       height="105.83334"
+       rx="0"
+       ry="0"
+       aria-hidden="true"
+       id="rect1640"
+       style="stroke-width:0.264583" />
+    <rect
+       fill="none"
+       x="30.174854"
+       y="29.563503"
+       width="150.28334"
+       height="80.697914"
+       aria-hidden="true"
+       id="rect1642"
+       style="stroke-width:0.264583" />
+    <rect
+       fill="none"
+       data-z-index="1"
+       x="30.174854"
+       y="29.563503"
+       width="150.28334"
+       height="80.697914"
+       aria-hidden="true"
+       id="rect1646"
+       style="stroke-width:0.264583" />
+    <g
+       data-z-index="1"
+       aria-hidden="true"
+       id="g1690"
+       transform="matrix(0.26458333,0,0,0.26458333,11.124856,26.917669)">
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 99.5,10 V 315"
+         opacity="1"
+         id="path1648" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 128.5,10 V 315"
+         opacity="1"
+         id="path1650" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 156.5,10 V 315"
+         opacity="1"
+         id="path1652" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 185.5,10 V 315"
+         opacity="1"
+         id="path1654" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 213.5,10 V 315"
+         opacity="1"
+         id="path1656" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 241.5,10 V 315"
+         opacity="1"
+         id="path1658" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 270.5,10 V 315"
+         opacity="1"
+         id="path1660" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 298.5,10 V 315"
+         opacity="1"
+         id="path1662" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 327.5,10 V 315"
+         opacity="1"
+         id="path1664" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 355.5,10 V 315"
+         opacity="1"
+         id="path1666" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 383.5,10 V 315"
+         opacity="1"
+         id="path1668" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 412.5,10 V 315"
+         opacity="1"
+         id="path1670" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 440.5,10 V 315"
+         opacity="1"
+         id="path1672" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 469.5,10 V 315"
+         opacity="1"
+         id="path1674" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 497.5,10 V 315"
+         opacity="1"
+         id="path1676" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 525.5,10 V 315"
+         opacity="1"
+         id="path1678" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 554.5,10 V 315"
+         opacity="1"
+         id="path1680" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 582.5,10 V 315"
+         opacity="1"
+         id="path1682" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 611.5,10 V 315"
+         opacity="1"
+         id="path1684" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 639.5,10 V 315"
+         opacity="1"
+         id="path1686" />
+      <path
+         fill="none"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 71.5,10 V 315"
+         opacity="1"
+         id="path1688" />
+    </g>
+    <g
+       data-z-index="1"
+       aria-hidden="true"
+       id="g1708"
+       transform="matrix(0.26458333,0,0,0.26458333,11.124856,26.917669)">
+      <path
+         fill="none"
+         stroke="#e6e6e6"
+         stroke-width="1"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 72,315.5 H 640"
+         opacity="1"
+         id="path1692" />
+      <path
+         fill="none"
+         stroke="#e6e6e6"
+         stroke-width="1"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 72,271.5 H 640"
+         opacity="1"
+         id="path1694" />
+      <path
+         fill="none"
+         stroke="#e6e6e6"
+         stroke-width="1"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 72,228.5 H 640"
+         opacity="1"
+         id="path1696" />
+      <path
+         fill="none"
+         stroke="#e6e6e6"
+         stroke-width="1"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 72,184.5 H 640"
+         opacity="1"
+         id="path1698" />
+      <path
+         fill="none"
+         stroke="#e6e6e6"
+         stroke-width="1"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 72,141.5 H 640"
+         opacity="1"
+         id="path1700" />
+      <path
+         fill="none"
+         stroke="#e6e6e6"
+         stroke-width="1"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 72,97.5 H 640"
+         opacity="1"
+         id="path1702" />
+      <path
+         fill="none"
+         stroke="#e6e6e6"
+         stroke-width="1"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 72,54.5 H 640"
+         opacity="1"
+         id="path1704" />
+      <path
+         fill="none"
+         stroke="#e6e6e6"
+         stroke-width="1"
+         stroke-dasharray="none"
+         data-z-index="1"
+         d="M 72,9.5 H 640"
+         opacity="1"
+         id="path1706" />
+    </g>
+    <g
+       data-z-index="2"
+       aria-hidden="true"
+       id="g1712"
+       transform="matrix(0.26458333,0,0,0.26458333,11.124856,26.917669)">
+      <path
+         fill="none"
+         stroke="#ccd6eb"
+         stroke-width="1"
+         data-z-index="7"
+         d="M 72,315.5 H 640"
+         id="path1710" />
+    </g>
+    <g
+       data-z-index="3"
+       aria-hidden="false"
+       id="g1816"
+       transform="matrix(0.26458333,0,0,0.26458333,11.124856,26.917669)">
+      <g
+         data-z-index="0.1"
+         opacity="1"
+         transform="translate(72,10)"
+         clip-path="url(#highcharts-jf0vix1-5070-)"
+         aria-hidden="true"
+         id="g1724">
+        <path
+           fill="none"
+           d="m 14.2,34.857143 28.4,20.914286 28.4,52.285711 28.4,45.31429 28.4,38.34286 28.4,24.4 28.4,13.07142 28.4,9.58572 28.4,5.22857 28.4,3.48571 28.4,2.61429 28.4,2.61429 28.4,-0.87143 28.4,3.48571 28.4,1.74286 28.4,0.87143 28.4,1.74285 28.4,0.87143 28.4,1.74286 h 28.4"
+           data-z-index="1"
+           stroke="#1f77b4"
+           stroke-width="2"
+           stroke-linejoin="round"
+           stroke-linecap="round"
+           id="path1720" />
+        <path
+           fill="none"
+           d="m 14.2,34.857143 28.4,20.914286 28.4,52.285711 28.4,45.31429 28.4,38.34286 28.4,24.4 28.4,13.07142 28.4,9.58572 28.4,5.22857 28.4,3.48571 28.4,2.61429 28.4,2.61429 28.4,-0.87143 28.4,3.48571 28.4,1.74286 28.4,0.87143 28.4,1.74285 28.4,0.87143 28.4,1.74286 h 28.4"
+           data-z-index="2"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke="rgba(192,192,192,0.0001)"
+           stroke-width="22"
+           id="path1722" />
+      </g>
+      <g
+         data-z-index="0.1"
+         opacity="1"
+         transform="translate(72,10)"
+         clip-path="none"
+         aria-hidden="false"
+         role="region"
+         tabindex="-1"
+         aria-label="Без весов, line 1 of 2 with 20 data points."
+         id="g1766">
+        <path
+           fill="#1f77b4"
+           d="m 14,38.857143 a 4,4 0 1 1 0.004,-2e-6 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="10, 1.56. Без весов."
+           id="path1726" />
+        <path
+           fill="#1f77b4"
+           d="m 42,59.771429 a 4,4 0 1 1 0.004,-2e-6 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="20, 1.536. Без весов."
+           id="path1728" />
+        <path
+           fill="#1f77b4"
+           d="m 71,112.05714 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="30, 1.476. Без весов."
+           id="path1730" />
+        <path
+           fill="#1f77b4"
+           d="m 99,157.37143 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="40, 1.424. Без весов."
+           id="path1732" />
+        <path
+           fill="#1f77b4"
+           d="m 127,195.71429 a 4,4 0 1 1 0.004,-1e-5 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="50, 1.38. Без весов."
+           id="path1734" />
+        <path
+           fill="#1f77b4"
+           d="m 156,220.11429 a 4,4 0 1 1 0.004,-1e-5 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="60, 1.352. Без весов."
+           id="path1736" />
+        <path
+           fill="#1f77b4"
+           d="m 184,233.18571 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="70, 1.337. Без весов."
+           id="path1738" />
+        <path
+           fill="#1f77b4"
+           d="m 213,242.77143 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="80, 1.326. Без весов."
+           id="path1740" />
+        <path
+           fill="#1f77b4"
+           d="m 241,248 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="90, 1.32. Без весов."
+           id="path1742" />
+        <path
+           fill="#1f77b4"
+           d="m 269,251.48571 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="100, 1.316. Без весов."
+           id="path1744" />
+        <path
+           fill="#1f77b4"
+           d="m 298,254.1 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="110, 1.313. Без весов."
+           id="path1746" />
+        <path
+           fill="#1f77b4"
+           d="m 326,256.71429 a 4,4 0 1 1 0.004,-1e-5 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="120, 1.31. Без весов."
+           id="path1748" />
+        <path
+           fill="#1f77b4"
+           d="m 355,255.84286 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="130, 1.311. Без весов."
+           id="path1750" />
+        <path
+           fill="#1f77b4"
+           d="m 383,259.32857 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="140, 1.307. Без весов."
+           id="path1752" />
+        <path
+           fill="#1f77b4"
+           d="m 411,261.07143 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="150, 1.305. Без весов."
+           id="path1754" />
+        <path
+           fill="#1f77b4"
+           d="m 440,261.94286 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="160, 1.304. Без весов."
+           id="path1756" />
+        <path
+           fill="#1f77b4"
+           d="m 468,263.68571 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="170, 1.302. Без весов."
+           id="path1758" />
+        <path
+           fill="#1f77b4"
+           d="m 497,264.55714 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="180, 1.301. Без весов."
+           id="path1760" />
+        <path
+           fill="#1f77b4"
+           d="m 525,266.3 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="190, 1.299. Без весов."
+           id="path1762" />
+        <path
+           fill="#1f77b4"
+           d="m 553,266.3 a 4,4 0 1 1 0.004,0 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="200, 1.299. Без весов."
+           id="path1764" />
+      </g>
+      <g
+         data-z-index="0.1"
+         opacity="1"
+         transform="translate(72,10)"
+         clip-path="url(#highcharts-jf0vix1-5070-)"
+         aria-hidden="true"
+         id="g1772">
+        <path
+           fill="none"
+           d="M 14.2,63.614286 42.6,68.842857 71,132.45714 99.4,183 l 28.4,23.52857 28.4,16.55714 28.4,8.71429 28.4,7.84286 28.4,5.22857 28.4,5.22857 28.4,4.35714 28.4,3.48572 28.4,3.48571 28.4,2.61429 28.4,1.74285 28.4,0.87143 28.4,5.22857 28.4,2.61429 28.4,4.35714 28.4,1.74286"
+           data-z-index="1"
+           stroke="#ff7f0e"
+           stroke-width="2"
+           stroke-linejoin="round"
+           stroke-linecap="round"
+           id="path1768" />
+        <path
+           fill="none"
+           d="M 14.2,63.614286 42.6,68.842857 71,132.45714 99.4,183 l 28.4,23.52857 28.4,16.55714 28.4,8.71429 28.4,7.84286 28.4,5.22857 28.4,5.22857 28.4,4.35714 28.4,3.48572 28.4,3.48571 28.4,2.61429 28.4,1.74285 28.4,0.87143 28.4,5.22857 28.4,2.61429 28.4,4.35714 28.4,1.74286"
+           data-z-index="2"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke="rgba(192,192,192,0.0001)"
+           stroke-width="22"
+           id="path1770" />
+      </g>
+      <g
+         data-z-index="0.1"
+         opacity="1"
+         transform="translate(72,10)"
+         clip-path="none"
+         aria-hidden="false"
+         role="region"
+         tabindex="-1"
+         aria-label="С весами, line 2 of 2 with 20 data points."
+         id="g1814">
+        <path
+           fill="#ff7f0e"
+           d="m 14,59.614286 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="10, 1.527. С весами."
+           id="path1774" />
+        <path
+           fill="#ff7f0e"
+           d="m 42,64.842857 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="20, 1.521. С весами."
+           id="path1776" />
+        <path
+           fill="#ff7f0e"
+           d="m 71,128.45714 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="30, 1.448. С весами."
+           id="path1778" />
+        <path
+           fill="#ff7f0e"
+           d="m 99,179 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="40, 1.39. С весами."
+           id="path1780" />
+        <path
+           fill="#ff7f0e"
+           d="m 127,202.52857 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="50, 1.363. С весами."
+           id="path1782" />
+        <path
+           fill="#ff7f0e"
+           d="m 156,219.08571 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="60, 1.344. С весами."
+           id="path1784" />
+        <path
+           fill="#ff7f0e"
+           d="m 184,227.8 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="70, 1.334. С весами."
+           id="path1786" />
+        <path
+           fill="#ff7f0e"
+           d="m 213,235.64286 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="80, 1.325. С весами."
+           id="path1788" />
+        <path
+           fill="#ff7f0e"
+           d="m 241,240.87143 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="90, 1.319. С весами."
+           id="path1790" />
+        <path
+           fill="#ff7f0e"
+           d="m 269,246.1 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="100, 1.313. С весами."
+           id="path1792" />
+        <path
+           fill="#ff7f0e"
+           d="m 298,250.45714 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="110, 1.308. С весами."
+           id="path1794" />
+        <path
+           fill="#ff7f0e"
+           d="m 326,253.94286 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="120, 1.304. С весами."
+           id="path1796" />
+        <path
+           fill="#ff7f0e"
+           d="m 355,257.42857 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="130, 1.3. С весами."
+           id="path1798" />
+        <path
+           fill="#ff7f0e"
+           d="m 383,260.04286 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="140, 1.297. С весами."
+           id="path1800" />
+        <path
+           fill="#ff7f0e"
+           d="m 411,261.78571 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="150, 1.295. С весами."
+           id="path1802" />
+        <path
+           fill="#ff7f0e"
+           d="m 440,262.65714 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="160, 1.294. С весами."
+           id="path1804" />
+        <path
+           fill="#ff7f0e"
+           d="m 468,267.88571 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="170, 1.288. С весами."
+           id="path1806" />
+        <path
+           fill="#ff7f0e"
+           d="m 497,270.5 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="180, 1.285. С весами."
+           id="path1808" />
+        <path
+           fill="#ff7f0e"
+           d="m 525,274.85714 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="190, 1.28. С весами."
+           id="path1810" />
+        <path
+           fill="#ff7f0e"
+           d="m 553,276.6 4,4 -4,4 -4,-4 z"
+           opacity="1"
+           tabindex="-1"
+           role="img"
+           aria-label="200, 1.278. С весами."
+           id="path1812" />
+      </g>
+    </g>
+    <g
+       data-z-index="7"
+       aria-hidden="true"
+       transform="matrix(0.26458333,0,0,0.26458333,71.714439,121.90309)"
+       id="g1858">
+      <rect
+         fill="none"
+         rx="0"
+         ry="0"
+         x="0"
+         y="0"
+         width="191"
+         height="26"
+         id="rect1836" />
+      <g
+         id="g1854"
+         transform="translate(3.351608)">
+        <g
+           data-z-index="1"
+           transform="translate(-12,3)"
+           id="g1844">
+          <path
+             fill="none"
+             d="M 0,11 H 16"
+             stroke="#1f77b4"
+             stroke-width="2"
+             id="path1838" />
+          <path
+             fill="#1f77b4"
+             d="m 8,15 a 4,4 0 1 1 0.004,-2e-6 z"
+             opacity="1"
+             id="path1840" />
+          <text
+             font-family="Roboto-Regular, Roboto"
+             x="21"
+             text-anchor="start"
+             data-z-index="2"
+             y="15"
+             style="color:#333333;font-weight:bold;font-size:12px;fill:#333333"
+             id="text1842">Без весов</text>
+        </g>
+        <g
+           data-z-index="1"
+           transform="translate(125.34766,3)"
+           id="g1852">
+          <path
+             fill="none"
+             d="M 0,11 H 16"
+             stroke="#ff7f0e"
+             stroke-width="2"
+             id="path1846" />
+          <path
+             fill="#ff7f0e"
+             d="m 8,7 4,4 -4,4 -4,-4 z"
+             opacity="1"
+             id="path1848" />
+          <text
+             font-family="Roboto-Regular, Roboto"
+             x="21"
+             y="15"
+             text-anchor="start"
+             data-z-index="2"
+             style="color:#333333;font-weight:bold;font-size:12px;fill:#333333"
+             id="text1850">С весами</text>
+        </g>
+      </g>
+    </g>
+    <g
+       data-z-index="7"
+       aria-hidden="true"
+       id="g1900"
+       transform="matrix(0.26458333,0,0,0.26458333,11.124856,26.917669)">
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="88.792725"
+         text-anchor="end"
+         transform="rotate(-45,88.792725,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1860">10</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="117.19273"
+         text-anchor="end"
+         transform="rotate(-45,117.19272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1862">20</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="145.59273"
+         text-anchor="end"
+         transform="rotate(-45,145.59272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1864">30</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="173.99272"
+         text-anchor="end"
+         transform="rotate(-45,173.99272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1866">40</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="202.39273"
+         text-anchor="end"
+         transform="rotate(-45,202.39272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1868">50</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="230.79272"
+         text-anchor="end"
+         transform="rotate(-45,230.79272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1870">60</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="259.19272"
+         text-anchor="end"
+         transform="rotate(-45,259.19272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1872">70</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="287.59271"
+         text-anchor="end"
+         transform="rotate(-45,287.59272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1874">80</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="315.99274"
+         text-anchor="end"
+         transform="rotate(-45,315.99272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1876">90</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="344.39273"
+         text-anchor="end"
+         transform="rotate(-45,344.39272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1878">100</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="372.79272"
+         text-anchor="end"
+         transform="rotate(-45,372.79272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1880">110</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="401.19272"
+         text-anchor="end"
+         transform="rotate(-45,401.19272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1882">120</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="429.59271"
+         text-anchor="end"
+         transform="rotate(-45,429.59272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1884">130</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="457.99274"
+         text-anchor="end"
+         transform="rotate(-45,457.99272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1886">140</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="486.39273"
+         text-anchor="end"
+         transform="rotate(-45,486.39272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1888">150</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="514.79272"
+         text-anchor="end"
+         transform="rotate(-45,514.79272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1890">160</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="543.19275"
+         text-anchor="end"
+         transform="rotate(-45,543.19272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1892">170</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="571.59271"
+         text-anchor="end"
+         transform="rotate(-45,571.59272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1894">180</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="599.99274"
+         text-anchor="end"
+         transform="rotate(-45,599.99272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1896">190</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="628.3927"
+         text-anchor="end"
+         transform="rotate(-45,628.39272,331)"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="331"
+         opacity="1"
+         id="text1898">200</text>
+    </g>
+    <g
+       data-z-index="7"
+       aria-hidden="true"
+       id="g1918"
+       transform="matrix(0.26458333,0,0,0.26458333,11.124856,26.917669)">
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="57"
+         text-anchor="end"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="320"
+         opacity="1"
+         id="text1902">1.25</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="57"
+         text-anchor="end"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="276"
+         opacity="1"
+         id="text1904">1.3</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="57"
+         text-anchor="end"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="232"
+         opacity="1"
+         id="text1906">1.35</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="57"
+         text-anchor="end"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="189"
+         opacity="1"
+         id="text1908">1.4</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="57"
+         text-anchor="end"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="145"
+         opacity="1"
+         id="text1910">1.45</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="57"
+         text-anchor="end"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="102"
+         opacity="1"
+         id="text1912">1.5</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="57"
+         text-anchor="end"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="58"
+         opacity="1"
+         id="text1914">1.55</text>
+      <text
+         font-family="Roboto-Regular, Roboto"
+         x="57"
+         text-anchor="end"
+         style="color:#666666;font-size:11px;fill:#666666"
+         y="15"
+         opacity="1"
+         id="text1916">1.6</text>
+    </g>
+  </g>
+</svg>
