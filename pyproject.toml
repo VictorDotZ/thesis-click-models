@@ -31,10 +31,15 @@ ruff = {}
 black = {}
 
 [tool.poetry.group.test.dependencies]
-pytest = {version = ">=8.3.4, < 9.0.0"}
+pytest = {version = ">=8.3.4, <9.0.0"}
+tensorboardX = {version = ">=2.6.2.2, <2.7.0.0"}
+tensorboard = {version = ">=2.19.0, <2.20.0"}
 
 [tool.poetry.group.ml.dependencies]
 matplotlib = {version = ">=3.10.0, <3.11.0"}
+pandas = {version = ">=2.2.0, <2.3.0"}
+pyclick = {file = ".local/PyClick-0.2-py3-none-any.whl"}
+scikit-learn = {version = ">=1.6.1, <1.7.0"}
 
 [tool.poetry.group.torch.dependencies]
 torch = {version = ">=2.6.0, <3.0.0", source = "pytorch-stable-rocm6.2.4"} 

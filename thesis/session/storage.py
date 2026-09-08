@@ -6,19 +6,20 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import torch
 from torch_geometric.data import Data
-from torch_geometric.utils import to_networkx
+from torch_geometric.data.data import DataEdgeAttr
+from torch_geometric.utils import add_self_loops, to_networkx
 
 from thesis.session.session import Document, Query, Session
 
 
 class Storage:
     def __init__(self, sessions: Set[Session]):
-        if not self.__is_valid_sessions(sessions):
-            raise ValueError(
-                "Query and Document indices must be form a finite, "
-                "contiguous sequence of non-negative integers "
-                "starting at 0 (e.g., {0, 1, 2, ..., n})."
-            )
+        # if not self.__is_valid_sessions(sessions):
+        #     raise ValueError(
+        #         "Query and Document indices must be form a finite, "
+        #         "contiguous sequence of non-negative integers "
+        #         "starting at 0 (e.g., {0, 1, 2, ..., n})."
+        #     )
 
         self._sessions = sessions
 
@@ -135,16 +136,27 @@ class Storage:
                 if current_node_query not in adjacency_list:
                     adjacency_list[current_node_query] = defaultdict(int)
 
-                # добавляем все смежные запросы, кроме текущего, чтобы не было петель (self-loop)
-                # TODO: Вообще говоря петли нужны, по идее их можно было бы сразу добавить тут
+                # добавляем все смежные запросы, в том числе и текущий,
+                # т.к. хотим получить петли с весами для запросов, у которых есть связи
                 for (
                     adjacency_query,
                     adjacency_query_weight,
                 ) in adjacency_queries.items():
-                    if adjacency_query != current_node_query:
-                        adjacency_list[current_node_query][
-                            adjacency_query
-                        ] += adjacency_query_weight
+                    adjacency_list[current_node_query][
+                        adjacency_query
+                    ] += adjacency_query_weight
+
+        # NOTE: добавим отдельно запросы, у которых нет связей с другими запросами.
+        for session in self.sessions:
+            query = session.query
+            if query not in adjacency_list:
+                adjacency_list[query] = defaultdict(int)
+
+            # Также добавим вес такой связи (вес петли)
+            # NOTE: В действительности можно было просто ограничиться 1,
+            # а не количеством таких запросов, но поскольку это изолированная вершина и петля,
+            # то разницы нет никакой -- она всегда будет выбираться своим соседом
+            adjacency_list[query][query] += 1
 
         return adjacency_list
 
@@ -163,7 +175,9 @@ class Storage:
     @staticmethod
     def to_Q_Q_graph(storage: "Storage") -> Data:
         """
-        Возвращает граф запросов (Query-Query) в формате torch_geometric
+        Возвращает граф запросов (Query-Query) в формате torch_geometric.
+        Граф может не быть связным, т.к. если по запросу не было кликов,
+        то он всё равно существует в графе и имеет петлю.
         """
 
         queries_graph_as_adjacency_list = storage.get_queries_graph_as_adjacency_list()
@@ -174,16 +188,16 @@ class Storage:
             for destination_query in queries_graph_as_adjacency_list[source_query]
         ]
 
-        nodes: List[List[Query]] = [
-            [source_query] for source_query in queries_graph_as_adjacency_list
-        ]
+        # nodes: List[List[Query]] = [
+        #     [source_query] for source_query in queries_graph_as_adjacency_list
+        # ]
 
         edges_indices: List[List[int]] = [
             [source_query.q_id, target_query.q_id]
             for [source_query, target_query] in edges
         ]
 
-        nodes_indices: List[List[int]] = [[source_node.q_id] for [source_node] in nodes]
+        # nodes_indices: List[List[int]] = [[source_node.q_id] for [source_node] in nodes]
 
         edge_weigts: List[int] = [
             queries_graph_as_adjacency_list[source_query][target_query]
@@ -191,21 +205,25 @@ class Storage:
         ]
 
         data = Data(
-            x=torch.tensor(nodes_indices, dtype=torch.long),
-            edge_index=torch.tensor(edges_indices, dtype=torch.float).t().contiguous(),
+            # x=torch.tensor(nodes_indices, dtype=torch.long),
+            x=None,
+            edge_index=torch.tensor(edges_indices, dtype=torch.long).t().contiguous(),
         )
 
         data["weight"] = torch.tensor(edge_weigts, dtype=torch.float)
+
+        print(data.edge_index)
 
         return data
 
     @staticmethod
     def save_Q_Q_graph(data: Data, save_path: Path) -> None:
-        torch.save(data, save_path)
+        with torch.serialization.safe_globals([DataEdgeAttr]):
+            torch.save(data, save_path)
 
     @staticmethod
     def load_Q_Q_graph(load_path: Path) -> Data:
-        return torch.load(load_path)
+        return torch.load(load_path, weights_only=False)
 
     @staticmethod
     def plot_graph(data: Data, save_path: Path) -> None:

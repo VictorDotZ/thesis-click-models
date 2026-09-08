@@ -1,5 +1,8 @@
+from torch_geometric.sampler import NeighborSampler, NodeSamplerInput
 from thesis.session.session import Document, Query, Session
 from thesis.session.storage import Storage
+
+import torch
 
 
 def test_queries_graph():
@@ -27,9 +30,16 @@ def test_queries_graph():
         clicked_documents=[d_2, d_1],
     )
 
+    s_4 = Session(
+        session_id=4,
+        query=Query(text="q4", q_id=3),
+        serp=[d_1, d_2, d_3],
+        clicked_documents=[],
+    )
+
     # В s_3 кликали по q_3 в d_1, как и в q_2.
     # Но поскольку у нас 2 s_3, то по q_3 кликали дважды
-    storage = Storage([s_1, s_2, s_3, s_3])
+    storage = Storage([s_1, s_2, s_3, s_3, s_4])
 
     adjacency_list = storage.get_queries_graph_as_adjacency_list()
 
@@ -40,9 +50,29 @@ def test_queries_graph():
     assert q_2 not in adjacency_list[q_3]
     assert q_1 in adjacency_list[q_3]
 
-    assert q_1 not in adjacency_list[q_1], "self loop exists"
+    assert q_1 in adjacency_list[q_1], "self loop should be presented"
 
     assert adjacency_list[q_1][q_3] == 2
     assert adjacency_list[q_3][q_1] == 1
 
     # TODO: надо как-то протестировать, что граф получается норм
+
+    # Storage.save_Q_Q_graph(
+    #     Storage.to_Q_Q_graph(storage=storage),
+    #     "./mygraph.pth",
+    # )
+
+    sampler = NeighborSampler(
+        Storage.to_Q_Q_graph(storage=storage),
+        num_neighbors=[10],
+        disjoint=True,
+    )
+
+    print(
+        sampler.sample_from_nodes(
+            NodeSamplerInput(
+                torch.tensor([3, 2], dtype=torch.long),
+                torch.tensor([3, 2], dtype=torch.long),
+            )
+        )
+    )
