@@ -169,3 +169,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# LaTeX (texlive, pdflatex etc) related
+*/svg-inkscape/*
+*.aux
+*.out
+*.synctex.gz
+*.toc
