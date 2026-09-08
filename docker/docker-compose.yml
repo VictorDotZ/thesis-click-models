@@ -1,0 +1,13 @@
+services:
+  rocm:
+    build: .
+    image: user/rocm:6.2.2-1
+  rocm-app:
+    image: user/rocm:6.2.2-1
+    group_add:
+      - video
+    devices:
+      - /dev/kfd
+      - /dev/dri
+    security_opt:
+      - seccomp:unconfined
